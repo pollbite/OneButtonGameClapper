@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbkmda5rnse71"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_8etan"]
+[ext_resource type="Texture2D" uid="uid://bs6r2gco1yhoe" path="res://1.png" id="2_7tj3o"]
+
+[node name="startScreen" type="Node2D"]
+script = ExtResource("1_8etan")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(578, 330)
+scale = Vector2(2.05247, 2.05247)
+texture = ExtResource("2_7tj3o")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 247.0
+offset_top = 236.0
+offset_right = 619.0
+offset_bottom = 276.0
+scale = Vector2(1.80567, 1.80567)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Kill the spiders, but don't hurt the butterflies!"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 446.0
+offset_top = 322.0
+offset_right = 559.0
+offset_bottom = 362.0
+scale = Vector2(1.947, 1.947)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "[Click to start]"

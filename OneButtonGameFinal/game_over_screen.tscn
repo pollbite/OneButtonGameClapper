@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://e0v3hdxijtei"]
+
+[ext_resource type="Script" path="res://game_over_screen.gd" id="1_ao0xi"]
+[ext_resource type="Texture2D" uid="uid://d4lfqjlcko0mi" path="res://8bit-pixel-art-night-sky-game-space-landscape_8071-65145.png" id="1_ws6gd"]
+
+[node name="gameOverScreen" type="Node2D"]
+script = ExtResource("1_ao0xi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(574.5, 326.5)
+scale = Vector2(1.95048, 2.57795)
+texture = ExtResource("1_ws6gd")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 314.0
+offset_top = 164.0
+offset_right = 410.0
+offset_bottom = 204.0
+scale = Vector2(5.2121, 5.2121)
+text = "GAME OVER"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 366.0
+offset_top = 304.0
+offset_right = 498.0
+offset_bottom = 344.0
+scale = Vector2(3.06083, 3.06083)
+text = "[Click to restart]"
